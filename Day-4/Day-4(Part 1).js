@@ -13,5 +13,5 @@ let y = 20;
 let z = x + y * x / y - x;
 document.getElementById("Sum").innerHTML = "Vaule of the Z : " + z;
 
-let a = true;
+let a = 15;
 console.log(typeof a)
