@@ -134,3 +134,38 @@
 // } while (i >= 1);
 // console.log("Times Up!");
 
+// --------------- 8. Nested Loop ---------------
+// for (let i = 0; i < 10; i++) {
+//   for (let i = 0; i < 10; i++) {
+//     console.log(i);
+//   }
+//   console.log(i);
+// }
+
+// --------------- 9. ATM PIN Check ---------------
+// let pass = 1234;
+// let auth = false;
+// for (let i = 1; i <= 3; i++) {
+//   let password = Number(prompt(`Your Attemp is ${i} Enter you ATM PIN : `));
+//   if (password === pass) {
+//     alert("PIN verified. Access granted.");
+//     auth = true;
+//     break;
+//   } else {
+//     alert(`Incorrect PIN. Tries left: ${3 - i}`);
+//   }
+// }
+// if (!auth) {
+//   alert("Maximum attempts reached. Card blocked.");
+// }
+
+// --------------- 10. Check Pass and Fail ---------------
+// let marks = [35, 50, 80, 20, 90];
+
+// for (let i = 0; i < marks.length; i++) {
+//   if (marks[i] >= 33) {
+//     console.log(marks[i], "Pass");
+//   } else {
+//     console.log(marks[i], "Fail");
+//   }
+// }
