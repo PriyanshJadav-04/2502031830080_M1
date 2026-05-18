@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 6 (Part 1)</title>
+    <link rel="stylesheet" href="/Day-6/Day-6(Part 1).css" />
+  </head>
+  <body>
+    <div class="form">
+      <h2 style="text-align: center">REGISTRATION FORM</h2>
+
+      <form onsubmit="return validate(this);">
+        <div class="data">
+          <label for="Name">Name:</label>
+          <input type="text" id="Name" name="Name" />
+        </div>
+
+        <div class="data">
+          <label for="EMail">E-mail Address:</label>
+          <input type="text" id="EMail" name="EMail" />
+        </div>
+
+        <div class="data">
+          <label for="Password">Password:</label>
+          <input type="password" id="Password" name="Password" />
+        </div>
+
+        <div class="data">
+          <label for="Telephone">Mobile:</label>
+          <input type="tel" id="Telephone" name="Telephone" />
+        </div>
+
+        <div class="data">
+          <label for="Subject">Select Your Course:</label>
+          <select id="Subject" name="Subject">
+            <option value="">Select Course</option>
+            <option>B.Tech</option>
+            <option>M.Tech</option>
+            <option>BCA</option>
+            <option>MCA</option>
+          </select>
+        </div>
+
+        <div class="data">
+          <label for="Comment">Comments:</label>
+          <textarea id="Comment" rows="3" name="Comment"></textarea>
+        </div>
+
+        <div class="submitreset">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    Select Product :
+    <select name="" id="product">
+      <option value="45000">AC</option>
+      <option value="22000">TV</option>
+      <option value="15000">Refrigerator</option>
+      <option value="70000">Laptop</option>
+    </select>
+    <br /><br />
+    Net Prize : <input type="text" id="prize" /> <br /><br />
+    Quantity : <input type="text" id="quantity" /> <br /><br />
+    Total Amount :<input type="text" id="amount" />
+    <script src="/Day-6/Day-6(Part 1).js"></script>
+  </body>
+</html>

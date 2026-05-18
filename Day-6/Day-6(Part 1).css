@@ -1,0 +1,28 @@
+.form {
+  max-width: 400px;
+  margin: auto;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.data label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.data input,
+.data select,
+.data textarea {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.submitreset {
+  display: flex;
+  gap: 10px;
+}
+.submitreset button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
