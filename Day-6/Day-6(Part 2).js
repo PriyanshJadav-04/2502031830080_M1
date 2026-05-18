@@ -28,13 +28,17 @@ btn1.addEventListener("click", () => {
   document.write("</table>");
 });
 
-let colors = ["red", "green", "blue", "pink", "black", "orange"];
-let mybody = document.getElementById("mybody");
-let i = 0;
-setInterval(() => {
-  mybody.style.backgroundColor = colors[i];
-  ++i;
-  if (i == colors.length) {
-    i = 0;
-  }
-}, 1000);
+// let colors = ["red", "green", "blue", "pink", "black", "orange"];
+// let mybody = document.getElementById("mybody");
+// let i = 0;
+// setInterval(() => {
+//   mybody.style.backgroundColor = colors[i];
+//   ++i;
+//   if (i == colors.length) {
+//     i = 0;
+//   }
+// }, 1000);
+
+let myJSON = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+let myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.cars[0];
