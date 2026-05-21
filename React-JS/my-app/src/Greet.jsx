@@ -1,8 +1,5 @@
 function Greet() {
-  const say = "Bye";
-  const headingStyle = {
-    color: "red",
-  };
-  return <h1 style={headingStyle}>{say}</h1>;
+  const say = "This is Greet JSX File text";
+  return <h1>{say}</h1>;
 }
 export default Greet;
