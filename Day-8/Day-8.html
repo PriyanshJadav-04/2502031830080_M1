@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #box {
+        width: 150px;
+        height: 150px;
+        background-color: #007bff;
+        margin-bottom: 20px;
+      }
+
+      button:hover:not(:disabled) {
+        background-color: #e2e6ea;
+      }
+
+      button:disabled {
+        background-color: #e9ecef;
+        color: #6c757d;
+        border-color: #dee2e6;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <button id="btnHide">Hide</button>
+    <button id="btnShow" disabled>Show</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#btnHide").click(function () {
+          $(this).prop("disabled", true);
+          $("#box").hide(3000, function () {
+            $("#btnShow").prop("disabled", false);
+          });
+        });
+
+        $("#btnShow").click(function () {
+          $(this).prop("disabled", true);
+          $("#box").show(3000, function () {
+            $("#btnHide").prop("disabled", false);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
